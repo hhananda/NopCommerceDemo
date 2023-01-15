@@ -46,6 +46,11 @@ namespace Nop.Core.Domain.Catalog
         public string FullDescription { get; set; }
 
         /// <summary>
+        /// Gets or sets the selling point
+        /// </summary>
+        public string SellingPoint { get; set; }
+
+        /// <summary>
         /// Gets or sets the admin comment
         /// </summary>
         public string AdminComment { get; set; }
