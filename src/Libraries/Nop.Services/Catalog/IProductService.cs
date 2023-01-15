@@ -975,5 +975,10 @@ namespace Nop.Services.Catalog
         Task DeleteDiscountProductMappingAsync(DiscountProductMapping discountProductMapping);
 
         #endregion
+
+
+        #region Selling points
+        Task<IList<Product>> GetProductsBySellingPointsAsync(int storeId, int pageSize);
+        #endregion
     }
 }

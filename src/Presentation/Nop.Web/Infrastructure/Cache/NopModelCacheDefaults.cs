@@ -300,5 +300,14 @@ namespace Nop.Web.Infrastructure.Cache
         public static CacheKey WidgetModelKey => new("Nop.pres.widget-{0}-{1}-{2}-{3}", WidgetPrefixCacheKey);
         public static string WidgetPrefixCacheKey => "Nop.pres.widget";
 
+
+        /// <summary>
+        /// Key for selling point identifiers displayed on the home page
+        /// </summary>
+        /// <remarks>
+        /// {0} : current store ID
+        /// </remarks>
+        public static CacheKey HomepagSellingPointIdsKey => new("Nop.pres.sellingpoint.homepage-{0}", HomepageSellingPointIdsPrefixCacheKey);
+        public static string HomepageSellingPointIdsPrefixCacheKey => "Nop.pres.sellingpoint.homepage";
     }
 }

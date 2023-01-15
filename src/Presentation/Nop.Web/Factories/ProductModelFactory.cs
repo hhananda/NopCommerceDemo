@@ -1373,6 +1373,7 @@ namespace Nop.Web.Factories
                     Name = await _localizationService.GetLocalizedAsync(product, x => x.Name),
                     ShortDescription = await _localizationService.GetLocalizedAsync(product, x => x.ShortDescription),
                     FullDescription = await _localizationService.GetLocalizedAsync(product, x => x.FullDescription),
+                    SellingPoint = product.SellingPoint,
                     SeName = await _urlRecordService.GetSeNameAsync(product),
                     Sku = product.Sku,
                     ProductType = product.ProductType,

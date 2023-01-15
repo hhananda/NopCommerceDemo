@@ -2858,6 +2858,21 @@ namespace Nop.Services.Catalog
 
         #endregion
 
+        #region Selling points
+        //get all products with selling points
+        public virtual async Task<IList<Product>> GetProductsBySellingPointsAsync(int storeId, int pageSize)
+        {
+            var query = _productRepository.Table.Where(p => p.SellingPoint != null 
+                && p.SellingPoint != "" 
+                && p.Published && p.Deleted == false);
+            query = query.OrderByDescending(p => p.CreatedOnUtc).ThenByDescending(p => p.Id);
+            //apply store mapping constraints
+            query = await _storeMappingService.ApplyStoreMapping(query, storeId);
+            
+            return await query.Take(pageSize).ToListAsync();
+        }
+        #endregion
+
         #endregion
     }
 }

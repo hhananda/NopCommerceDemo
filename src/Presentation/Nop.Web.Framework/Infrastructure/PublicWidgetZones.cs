@@ -91,6 +91,7 @@
         public static string HeaderMiddle => "header_middle";
         public static string HeaderSelectors => "header_selectors";
         public static string HeadHtmlTag => "head_html_tag";
+        public static string HomepageBeforeSellingPoints => "home_page_before_selling_point_sellers";
         public static string HomepageBeforeBestSellers => "home_page_before_best_sellers";
         public static string HomepageBeforeCategories => "home_page_before_categories";
         public static string HomepageBeforeNews => "home_page_before_news";

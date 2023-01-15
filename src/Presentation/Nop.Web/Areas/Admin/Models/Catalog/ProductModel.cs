@@ -106,6 +106,9 @@ namespace Nop.Web.Areas.Admin.Models.Catalog
         [NopResourceDisplayName("Admin.Catalog.Products.Fields.FullDescription")]
         public string FullDescription { get; set; }
 
+        [NopResourceDisplayName("Admin.Catalog.Products.Fields.SellingPoint")]
+        public string SellingPoint { get; set; }
+
         [NopResourceDisplayName("Admin.Catalog.Products.Fields.AdminComment")]
         public string AdminComment { get; set; }
 
